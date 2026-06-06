@@ -6,7 +6,7 @@ export default function DesktopOnly({
 }: {
   children: React.ReactNode;
 }) {
-  const [isDesktop, setIsDesktop] = useState(false);
+  const [isDesktop, setIsDesktop] = useState<boolean | null>(null); // ← null, not false
 
   useEffect(() => {
     const check = () => setIsDesktop(window.innerWidth >= 1024);
@@ -14,6 +14,8 @@ export default function DesktopOnly({
     window.addEventListener("resize", check);
     return () => window.removeEventListener("resize", check);
   }, []);
+
+  if (isDesktop === null) return null; // ← render nothing while checking
 
   if (!isDesktop) {
     return (

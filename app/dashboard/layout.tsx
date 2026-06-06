@@ -1,4 +1,4 @@
-import DesktopOnly from "@/components/dashboard/DesktopOnly";
+import DesktopOnly from "@/components/DesktopOnly";
 import Sidebar from "@/components/dashboard/Sidebar";
 
 function DashboardLayout({ children }: { children: React.ReactNode }) {

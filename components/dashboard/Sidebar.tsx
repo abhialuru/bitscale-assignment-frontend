@@ -48,7 +48,7 @@ function Sidebar() {
   return (
     <section className="w-[18%] h-full border-r border-[#E4E5E6]">
       <div className="w-full h-[55px] pl-10 flex items-center border-b border-[#E4E5E6]">
-        <div className="text-[26px] font-semibold">
+        <div className="text-[26px] font-semibold flex gap-0.5">
           <span className="italic">B</span>
           <span>itscale</span>
         </div>

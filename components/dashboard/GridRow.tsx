@@ -157,7 +157,7 @@ function GridRow() {
   ];
 
   return (
-    <div className="bg-gray-50 flex-1 overflow-y-auto">
+    <div className="bg-gray-50 flex-1 overflow-y-auto hide-scrollbar">
       {grids.map((item, i) => (
         <div
           key={i}
